@@ -98,18 +98,18 @@
 @each $state in palm, desk, desk-wide
   .constrain--#{$state}
     +box-sizing(border-box)
-    :margin
-      :right auto
-      :left auto
+    margin:
+      right: auto
+      left: auto
 
     @if $state == palm
-      :max-width $palm-end
+      max-width: $palm-end
 
     @if $state ==  desk
-      :max-width $desk-start
+      max-width: $desk-start
 
     @if $state == desk-wide
-      :max-width $desk-wide-start
+      max-width: $desk-wide-start
 
 
 

@@ -1,26 +1,26 @@
 .grid-wrapper, 
 .gw
-  :list-style none
-  :margin-left -$base-spacing-unit
-  :margin-bottom 0
+  list-style: none
+  margin-left: -$base-spacing-unit
+  margin-bottom: 0
   +gfy-clearfix
-  :overflow visible
+  overflow: visible
 
 .grid, 
 .g
-  :float left
-  :margin 0
-  :padding-left $base-spacing-unit
+  float: left
+  margin: 0
+  padding-left: $base-spacing-unit
   +box-sizing(border-box)
-  :min-height 1em
+  min-height: 1em
 
   &.field
     > input, 
     > select, 
     > textarea
-      :width 100%
+      width: 100%
       +box-sizing(border-box)
 
 .gr--rev > .g,
 .grid-wrapper--rev > .grid
-  :float right
+  float: right
