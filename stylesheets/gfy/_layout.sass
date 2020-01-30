@@ -2,7 +2,7 @@
   position: relative
   overflow: hidden
   height: $font-size*2.6875
-  :text-align center
+  text-align: center
   //@include background(linear-gradient(#b4d6f7, #9fb0da))
   @if $background_bottom == undefined
     +background(linear-gradient($background, desaturate(darken($background, 15%), 40%) ))
@@ -19,130 +19,130 @@
     +text-color(darken($background, 5%))
     @include text-shadow(rgba(255,255,255,0.4) 0 1px 0)
     //color: #4f5a6c
-    :position absolute
-    :z-index 1
+    position: absolute
+    z-index: 1
   a
-    :position relative
-    :margin 0
-    :vertical-align -.1em
+    position: relative
+    margin: 0
+    vertical-align: -.1em
   .gfy-right, .gfy-left, .gfy-center
-    :line-height $font-size*2.6875
+    line-height: $font-size*2.6875
     
 =gfy-three-column
   .gfy-right, .gfy-left, .gfy-center
-    :position relative
-    :padding 0
-    :z-index 2
-    :margin 0
+    position: relative
+    padding: 0
+    z-index: 2
+    margin: 0
   .gfy-center
-    :text-align center
-    :margin 0
+    text-align: center
+    margin: 0
     //:width 100%
-    :display block
-    :position absolute
-    :left 0
-    :right 0
-    :z-index 1
-    :display block
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    z-index: 1
+    display: block
   .gfy-right
-    :float right
-    :margin-right 1em
+    float: right
+    margin-right: 1em
   .gfy-left
-    :float left
-    :margin-left 1em
+    float: left
+    margin-left: 1em
 
 // =fill-width
-//   :left 0
-//   :right 0
+//   left: 0
+//   right: 0
 // =fill-height
-//   :top 0
-//   :bottom 0
+//   top: 0
+//   bottom: 0
 // =width($val: 0)
-//   :width $val
+//   width: $val
 //   //html.ie6 &
 //     //:display inline //Double-margin bug fix
 // =height($val: 0)
-//   :height $val
+//   height: $val
 // =top($val: 0)
-//   :top $val
+//   top: $val
 // =right($val: 0)
-//   :right $val
-//   :margin-right $val
-//   :float right
+//   right: $val
+//   margin-right: $val
+//   float: right
 //   html.ie6 &
 //     +double-margin-fix
 // =bottom($val: 0)
-//   :bottom $val
+//   bottom: $val
 // =left($val: 0)
-//   :left $val
-//   :margin-left $val
-//   :float left
+//   left: $val
+//   margin-left: $val
+//   float: left
 //   html.ie6 &
 //     +double-margin-fix
 
 // =center($right: 0, $left: 0)
 //   @if $right == 0 and $left == 0
-//     :right 0
-//     :left 0
+//     right: 0
+//     left: 0
 //   @else
-//     :right $right
-//     :left $left
-//     :margin-right $right
-//     :margin-left $left
+//     right: $right
+//     left: $left
+//     margin-right: $right
+//     margin-left: $left
 
 // =guify($position: absolute, $width: 100%, $center: false)
 //   #container
-//     :top 0
-//     :bottom 0
-//     :left 0
-//     :right 0
+//     top: 0
+//     bottom: 0
+//     left: 0
+//     right: 0
 
 //   @if $position == absolute
 
 //     #container
-//       :position absolute
+//       position: absolute
 
 //     .cell
-//       :position absolute
-//       :float none
-//       :overflow hidden
+//       position: absolute
+//       float: none
+//       overflow: hidden
 
 //     div > .cell
-//       :margin 0 !important
+//       margin: 0 !important
 
 //     .cell > .border
-//       :position absolute
-//       :top 0
-//       :right 0
-//       :bottom 0
-//       :left 0
-//       :overflow auto
+//       position: absolute
+//       top: 0
+//       right: 0
+//       bottom: 0
+//       left: 0
+//       overflow: auto
 
 //   @if $position == static
 //     #container
-//       :width $width
+//       width: $width
 //       @if $center == true
-//         :margin 0 auto
+//         margin: 0 auto
 //     #container, .cells, .cell, .cell .border
-//       :position static
+//       position: static
 
 //   html.ie6 &
 //     #container, .cells, .cell, .cell .border
-//       :position static
-//       :zoom 1
+//       position: static
+//       zoom: 1
 //     .cell .border
-//       :overflow auto
+//       overflow: auto
 
 =clearfix
-  :overflow auto
+  overflow: auto
   &:after
-    :content " "
-    :display block
-    :height 0
-    :clear both
-    :visibility hidden
+    content: " "
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
   html.ie6 &, html.ie7 &
-    :zoom 1
+    zoom: 1
 
 //
 

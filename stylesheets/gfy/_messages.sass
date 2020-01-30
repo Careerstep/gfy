@@ -1,36 +1,36 @@
 //body
 =messages
   &.flash
-    :background
-      :position center $flash_full_height
+    background:
+      position: center $flash_full_height
     #error,
     #notice,
     .alert--error,
     .alert--notice
-      :top 0 !important
+      top: 0 !important
     #message,
     .alert--message
-      :top  $flash_full_height !important
+      top:  $flash_full_height !important
     #container
-      :top  $flash_full_height !important
+      top:  $flash_full_height !important
   &.sticky-message
-    :background
-      :position center $flash_full_height
+    background:
+      position: center $flash_full_height
     #container
-      :top  $flash_full_height !important
+      top:  $flash_full_height !important
     &.flash
-      :background
-        :position center ($flash_full_height + $flash_full_height)
+      background:
+        position: center ($flash_full_height + $flash_full_height)
       #error,
       #notice,
       .alert--error,
       .alert--notice
-        :top 0 !important
+        top: 0 !important
       #message,
       .alert--message
-        :top  $flash_full_height !important
+        top:  $flash_full_height !important
       #container
-        :top ($flash_full_height + $flash_full_height) !important
+        top: ($flash_full_height + $flash_full_height) !important
   #error,
   #message,
   #notice,
@@ -38,106 +38,106 @@
   .alert--message,
   .alert--notice
     //l
-    :text-align center
-    :height  $flash_height
-    :line-height  $flash_height
-    :overflow hidden
-    :width 100%
-    :border-bottom 1px solid
-    :border-top 1px solid
-    :z-index 10
+    text-align: center
+    height:  $flash_height
+    line-height:  $flash_height
+    overflow: hidden
+    width: 100%
+    border-bottom: 1px solid
+    border-top: 1px solid
+    z-index: 10
     //c
-    :text-shadow 0.1em 0.1em #fff
-    :border-top-color #FFF
+    text-shadow: 0.1em 0.1em #fff
+    border-top-color: #FFF
     p
-      :font
-        :weight bold
-        :size 1.1em
-      :padding 0 1em
-      :margin 0
-      :line-height 3.4em
+      font:
+        weight: bold
+        size: 1.1em
+      padding: 0 1em
+      margin: 0
+      line-height: 3.4em
     .icon
-      :width 3.8em
-      :height 2.7em
-      :margin 0 0 .5em 0
-      :vertical-align middle
+      width: 3.8em
+      height: 2.7em
+      margin: 0 0 .5em 0
+      vertical-align: middle
   #error,
   .alert--error
-    :background #FFD1D2
+    background: #FFD1D2
     // url(/images/flash-background.png) bottom center repeat-x
-    :color #A01111
+    color: #A01111
   #message,
   .alert--message
-    :background
-      :color  $mac_yellow
+    background:
+      color:  $mac_yellow
       //:image url(/images/flash-background.png)
-      :position bottom center
-      :repeat repeat-x
-    :color #502E17
-    :border-bottom-color #AA8E38
+      position: bottom center
+      repeat: repeat-x
+    color: #502E17
+    border-bottom-color: #AA8E38
   #notice,
   .alert--notice
-    :background #C0FCD5
+    background: #C0FCD5
     // url(/images/flash-background.png) bottom center repeat-x
-    :color #2D8169
+    color: #2D8169
 
 =gfy-alerts
   .alert
-    :margin-bottom $half-spacing-unit
-    :padding $half-spacing-unit
-    :border 1px solid
-    :background lighten($yellow, 20%)
-    :color $yellow_dark
-    :border-color lighten($yellow_dark, 20%)
+    margin-bottom: $half-spacing-unit
+    padding: $half-spacing-unit
+    border: 1px solid
+    background: lighten($yellow, 20%)
+    color: $yellow_dark
+    border-color: lighten($yellow_dark, 20%)
     +text-shadow(rgba(255,255,255,0.5) 0 1px 0)
     +border-radius(5px)
 
     > p, > ul
-      :margin 0
+      margin: 0
 
     &.alert--error
       +gfy-text-color($error_background_color)
-      :background $error_background_color
-      :border-color lighten($mac_red, 20%)
+      background: $error_background_color
+      border-color: lighten($mac_red, 20%)
 
     &.alert--notice
-      :color $mac_green
-      :background lighten($mac_green, 40%)
-      :border-color lighten($mac_green, 20%)
+      color: $mac_green
+      background: lighten($mac_green, 40%)
+      border-color: lighten($mac_green, 20%)
 
     &.alert--sticky
-      :border
-        :right none
-        :left none
-      :border-top-color rgba(255,255,255, 0.2)
+      border:
+        right: none
+        left: none
+      border-top-color: rgba(255,255,255, 0.2)
       +border-radius(0)
 
     &.alert--striped
-      :border none
+      border: none
       +border-radius(0)
-      :background none
+      background: none
 
       .well &
         +border-top-radius($half-spacing-unit)
 
       +respond-to(palm)
-        :margin -$base-spacing-unit
-      :padding $base-spacing-unit
+        margin: -$base-spacing-unit
+      padding: $base-spacing-unit
 
       p
-        :margin 0
+        margin: 0
 
       &.alert--error
         +background(image_url('diagonal-bar-bg.png'),linear-gradient(rgba(#FFD1D2,1),rgba(#FFD1D2,0)))
-        :background-repeat repeat-x
-        :color #A01111
+        background-repeat: repeat-x
+        color: #A01111
 
       &.alert--message
         +background(image_url('diagonal-bar-bg.png'),linear-gradient(rgba($mac_yellow,1),rgba($mac_yellow,0)))
-        :background-repeat repeat-x
-        :color #502E17
+        background-repeat: repeat-x
+        color: #502E17
 
       &.alert--notice
         +background(image_url('diagonal-bar-bg.png'),linear-gradient(rgba(#C0FCD5,1),rgba(#C0FCD5,0)))
-        :background-repeat repeat-x
-        :color #2D8169
+        background-repeat: repeat-x
+        color: #2D8169
