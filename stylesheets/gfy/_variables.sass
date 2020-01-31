@@ -41,11 +41,11 @@ $fixed_container_width: 960px - $grid_margin
 
 $highlight_border_color: #B39B56
 $highlight_background_color: #FDF9D3
-$highlight_color: $highlight_border_color - #494949
+$highlight_color: #6A520D // $highlight_border_color - #494949 //  operator syntax for colors is deprecated and there is no direct replacement.  Consider using `darken / lighten' functions
 
 $highlight_border_top_color: $highlight_color
-$highlight_border_sides_color: $highlight_color + #696969
-$highlight_border_bottom_color: $highlight_color + #8E8E8E
+$highlight_border_sides_color: #D3BB76  // $highlight_color + #696969 //  operator syntax for colors is deprecated and there is no direct replacement.  Consider using `darken / lighten' functions
+$highlight_border_bottom_color: #F8E09B // $highlight_color + #8E8E8E //  operator syntax for colors is deprecated and there is no direct replacement.  Consider using `darken / lighten' functions
 $highlight_text_shadow: lighten($highlight_background_color, 20%)
 
 $error_border_color: #F97F80
@@ -53,8 +53,8 @@ $error_background_color: #FFD1D2
 $error_color: #A01111
 
 $error_border_top_color: $error_color
-$error_border_sides_color: $error_color + #727272
-$error_border_bottom_color: $error_color + #A1A1A1
+$error_border_sides_color: #F28383 // $error_color + #727272 //  operator syntax for colors is deprecated and there is no direct replacement.  Consider using `darken / lighten' functions
+$error_border_bottom_color: #FFB2B2 // $error_color + #A1A1A1 //  operator syntax for colors is deprecated and there is no direct replacement.  Consider using `darken / lighten' functions
 $error_text_shadow: lighten($error_background_color, 20%)
 
 $flash_height: 3.7em
